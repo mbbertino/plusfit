@@ -1,28 +1,76 @@
-body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
-}
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
-    h1 {
-        font-size: 60px;
-        line-height: 1;
-        letter-spacing: -1px;
-    }
-}
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+// defaults and cross branding
+
+$brandwhite: #fafafa;
+$brandpurple: #9b59b6;
+$brandyellow: #f4d03f;
 
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
+}
+
+body {
+	background-image: url('../images/crossed_stripes.png');
+	background-repeat: repeat;
+}
+
+/* Main marketing message and sign up button */
+.signup {	
+	padding: 30px 15px;
+	background: $brandwhite;
+	float: none;
+	margin: 0 auto;
+	overflow: hidden;
+  text-align: center; 
+  
+  h1 {
+  	color: $brandpurple;
+  }
+  
+  h3 {
+  	small {
+  		strong {
+  			color: $brandyellow;
+	  		&:hover {
+	  			cursor: pointer;
+		  		color: $brandpurple;
+	  		}		
+  		}
+  	}
+  }
+
+  .creds {   
+  	font-size: 18px;
+  	margin: 10px 0;
+  	padding: 10px;
+  	border-radius: 0px;  
+
+  	&.btn {
+  		text-transform: uppercase;
+  		background: $brandpurple;
+  		color: #fff;
+  		text-align: right;
+			font-weight: bold;
+
+  		&:hover {
+  			background: $brandyellow;
+  			color: $brandwhite;
+  		}
+  	}
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 960px;
+    }    
 }
