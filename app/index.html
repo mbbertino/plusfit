@@ -31,6 +31,8 @@
         <div class="container">          
         </div>
 
+        
+
         <script type="text/template" id="appview-template">
           <h1><strong>X </strong>FIT</h1>
           <h3>SignUp <small>Already a member? <strong class="js-login-page">Login</strong></small></h3>
@@ -40,7 +42,7 @@
           	<input type='checkbox'>
           	<small>I Accept The <strong>Terms</strong></small>
           </div>
-          <button class="creds btn btn-defualt col-xs-12">Get Fit <i class="icon ion-android-arrow-forward"></i></button>
+          <button class="creds btn btn-defualt col-xs-12 js-login">Get Fit <i class="icon ion-android-arrow-forward"></i></button>
         </script>
 
         <script type="text/template" id="login-template">
@@ -48,8 +50,34 @@
           <h3>Login <small>Not a member? <strong class="js-signup-page">SignUp</strong></small></h3>
           <input class='creds col-xs-12' placeholder="username/email">
           <input class='creds col-xs-12' placeholder="password">
-          <button class="creds btn btn-defualt col-xs-12">Get Fit <i class="icon ion-android-arrow-forward"></i></button>
+          <button class="creds btn btn-defualt col-xs-12 js-login">Get Fit <i class="icon ion-android-arrow-forward"></i></button>
         </script>
+
+        <script type="text/template" id="profile-template">
+	        <div class="profile col-xs-12">
+	        	<div class="profile-pic col-md-4">
+		        	<i class="icon ion-person"></i>
+	        	</div>
+		        <div class="col-md-8 profile-info">
+		        	<i class="pull-right icon ion-settings"></i>
+		          <h2>Matt Bertino</h2>
+		          <h4>The Italian Stallion</h4>
+			        <ul>
+			        	<li><strong>Age:</strong> 24</li>
+			        	<li><strong>Height:</strong> 6.5</li>
+			        	<li><strong>Weight:</strong> 215lbs</li>
+			        </ul>
+		          <p>Lorem ipsum orem ipsum orem ipsum orem ipsum orem ipsum orem ipsum orem ipsum orem ipsum orem ipsum orem ipsum orem ipsum orem ipsum orem ipsum orem ipsum</p>
+		        </div>
+		        <div class="col-xs-12 wod-btn-container">
+			        <button class="wod-btn btn btn-defualt col-xs-12 js-wod">WOD</button>
+		        </div>
+		        <div class="col-xs-12 status-container">
+		          <input class='col-xs-12' placeholder="Update Status">			        
+		        </div>
+	        </div>
+        </script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -88,6 +116,7 @@
         <script src="scripts/main.js"></script>
         <script src="scripts/appview.js"></script>
         <script src="scripts/login.js"></script>
+        <script src="scripts/athletepage.js"></script>
         <!-- endbuild -->
 </body>
 </html>

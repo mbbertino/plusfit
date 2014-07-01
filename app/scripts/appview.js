@@ -5,11 +5,16 @@ var AppView = Backbone.View.extend({
   renderedTemplate: _.template($('#appview-template').text()),
 
   events: {
-    "click .js-login-page": "goLoginPage"
+    "click .js-login-page": "goLoginPage",
+    "click .js-login": "login"
   },
 
   goLoginPage: function() {
     new LoginView()
+  },
+
+  login: function() {
+    new AthleteProfileView()
   },
 
   initialize: function() {

@@ -23,12 +23,104 @@ body {
 	background-image: url('../images/crossed_stripes.png');
 	background-repeat: repeat;
 }
+.profile-container {
+  float: none;
+  margin: 0 auto;
+  overflow: hidden;
+	
+	.profile {
+		margin-top: 30px;		
+		padding-left: 0px;
+		padding-right: 0px;
+		overflow: hidden;
+
+	  .profile-pic {
+	  	text-align: center;
+	  	overflow: hidden;
+	  	background: $brandgrey;
+	  	height: 100%;
+
+	  	i {
+	  		font-size: 135px;
+	  		color: $brandwhite;
+	  	}
+	  }
+
+	  .wod-btn-container {
+	  	padding: 15px 0px;
+	  	text-align: center;
+
+	  	.wod-btn {
+	  		font-size: 24px;
+	  		border-radius: 0px;
+	  		float: none;
+	  		margin: 0 auto;
+	  		background: $brandpurple;
+	  		color: $brandwhite;
+	  		font-weight: bold;
+	  		text-align: left;
+
+	  		&:hover {
+	  			outline: 2px solid $brandpurple;
+	  			background: $brandwhite;
+	  			color: $brandpurple;
+	  		}
+	  	}
+	  }
+
+	  .status-container {
+	  	padding: 0px;
+
+	  	input {
+	  		padding: 10px;
+	  		font-size: 18px;
+	  	}
+	  }
+
+	  .profile-info {
+	  	padding: 15px;
+			background: $brandwhite;
+			overflow: hidden;	
+
+			h2, h4 {
+				margin: 0px;
+			}
+
+			h4 {
+				font-style: italic;
+				margin-bottom: 15px;
+			}
+
+			p {
+				height: 60px;
+				overflow-y: scroll;
+				margin: 0px;
+			}
+
+			ul {
+				margin: 0px;
+				margin-bottom: 15px;
+				padding-left: 0px; 
+				list-style: none;
+
+				li {		
+					margin-right: 15px;			
+					display: inline-block;
+
+					strong {
+						color: $brandpurple;
+					}
+				}
+			}   	
+	  }
+	}
+}
 
 .signup {	
 	padding: 40px 15px;
 	background: $brandwhite;
 	float: none;
-	margin: auto auto;
+	margin: 0 auto;
 	overflow: hidden;
   text-align: center;
   box-shadow: 0px 0px 15px $brandpurple;
@@ -73,6 +165,7 @@ body {
 
   		strong {
   			color: $brandpurple;
+
   			&:hover {
   				cursor: pointer;
   				color: $brandyellow;
