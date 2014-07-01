@@ -28,7 +28,7 @@ body {
 	padding: 30px 15px;
 	background: $brandwhite;
 	float: none;
-	margin: 0 auto;
+	margin: auto auto;
 	overflow: hidden;
   text-align: center;
   box-shadow: 0px 0px 15px $brandpurple;
@@ -63,7 +63,7 @@ body {
   	padding: 10px;
   	border-radius: 0px;  
 
-  	&.checkbox {
+  	&.checkbox { 
   		margin: 0px;
   		margin-bottom: 15px;
   		padding: 0px;
