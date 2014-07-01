@@ -25,7 +25,7 @@ body {
 }
 
 .signup {	
-	padding: 30px 15px;
+	padding: 40px 15px;
 	background: $brandwhite;
 	float: none;
 	margin: auto auto;
@@ -67,9 +67,17 @@ body {
   		margin: 0px;
   		margin-bottom: 15px;
   		padding: 0px;
-  		font-size: 14px;
+  		font-size: 16px;
   		text-align: left;
   		padding-left: 20px;
+
+  		strong {
+  			color: $brandpurple;
+  			&:hover {
+  				cursor: pointer;
+  				color: $brandyellow;
+  			}
+  		}
   	}
 
   	&.btn {
@@ -91,7 +99,14 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 960px;
-    }    
+  .container {
+    max-width: 960px;
+  }    
+}
+
+@media screen and (max-width: 528px) {
+  .container {
+  	padding-left: 0px;
+  	padding-right: 0px;      
+  }    
 }
