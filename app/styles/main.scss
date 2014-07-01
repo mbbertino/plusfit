@@ -67,13 +67,47 @@ body {
 	  		}
 	  	}
 	  }
+	  .leaderboards-container {
+	  	margin: 15px 0px;
+  		color: $brandwhite;
+  		background: $brandgrey;
+  		height: 200px;
 
+	  	i {
+	  		color: $brandpurple;
+	  		margin-top: 29px;
+		  	font-size: 12px;	
+		  	font-style: normal;
+	  		text-transform: uppercase;
+
+				&:hover {
+					cursor: pointer;
+					color: $brandyellow;
+				}
+			}
+
+			h2 {
+				margin: 15px 0px 0px;
+			}
+
+	  	.boards-list {				
+	  		border-top: 1px solid $brandpurple;
+	  	}	  	
+	  }
 	  .status-container {
 	  	padding: 0px;
 
 	  	input {
+	  		border: none;
 	  		padding: 10px;
 	  		font-size: 18px;
+	  	}
+
+	  	.status-list-container {
+	  		box-shadow: inset 0px 0px 5px $brandgrey;
+	  		background: $brandwhite;
+	  		overflow-y: scroll;
+	  		height: 300px;
 	  	}
 	  }
 
@@ -82,6 +116,14 @@ body {
 			background: $brandwhite;
 			overflow: hidden;	
 
+			i {
+				color: $brandpurple;
+				
+				&:hover {
+					cursor: pointer;
+					color: $brandyellow;
+				}
+			}
 			h2, h4 {
 				margin: 0px;
 			}
