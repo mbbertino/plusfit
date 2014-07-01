@@ -100,14 +100,14 @@ body {
 	  	input {
 	  		border: none;
 	  		padding: 10px;
-	  		font-size: 18px;
+	  		font-size: 16px;
 	  	}
 
 	  	.status-list-container {
-	  		box-shadow: inset 0px 0px 5px $brandgrey;
-	  		background: $brandwhite;
+	  		background: darken($brandwhite, 2%);
+	  		box-shadow: inset 0px 0px 1px $brandgrey;
 	  		overflow-y: scroll;
-	  		height: 300px;
+	  		height: 250px;
 	  	}
 	  }
 
@@ -117,8 +117,17 @@ body {
 			overflow: hidden;	
 
 			i {
+				margin-right: 15px; 
+				font-size: 14px;
 				color: $brandpurple;
 				
+				span {
+					font-style: normal;
+					margin-left: 5px;
+					font-size: 10px;
+					text-transform: uppercase;
+				}
+
 				&:hover {
 					cursor: pointer;
 					color: $brandyellow;

@@ -6,15 +6,30 @@ var AppView = Backbone.View.extend({
 
   events: {
     "click .js-login-page": "goLoginPage",
-    "click .js-login": "login"
+    "click .js-signup": "signUp"
   },
 
   goLoginPage: function() {
     new LoginView()
   },
 
-  login: function() {
-    new AthleteProfileView()
+  signUp: function() {
+    var user = new Parse.User();
+
+    user.set("username", this.$('.js-email').val());
+    user.set("password", this.$('.js-password').val());
+    user.set("email", this.$('.js-email').val());
+
+    user.signUp(null, {
+      success: function(user) {
+        window.router.navigate("/athleteprofile/" + Parse.User.current().attributes.username, {
+          trigger: true
+        });
+      },
+      error: function(user, error) {
+        alert("Error: " + error.code + " " + error.message);
+      }
+    });
   },
 
   initialize: function() {

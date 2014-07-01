@@ -5,7 +5,7 @@ var AthleteProfileView = Backbone.View.extend({
   renderedTemplate: _.template($('#profile-template').text()),
 
   events: {
-
+    "click .js-logout": "logOut"
   },
 
   initialize: function() {
@@ -13,6 +13,12 @@ var AthleteProfileView = Backbone.View.extend({
     this.render()
   },
 
+  logOut: function() {
+    Parse.User.logOut()
+    window.router.navigate("", {
+      trigger: true
+    });
+  },
   render: function() {
     this.$el.html(this.renderedTemplate())
   }
